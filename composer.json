@@ -1,0 +1,40 @@
+{
+    "name": "mamura/simple-signature",
+    "description": "Pacote Laravel para inserir assinaturas digitalizadas em PDFs.",
+    "keywords": [
+        "laravel",
+        "pdf",
+        "signature",
+        "digital signature"
+    ],
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Mamura\\SimpleSignature\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mamura",
+            "email": "marcio.mota@gmail.com"
+        }
+    ],
+    "require": {
+        "setasign/fpdi-tcpdf": "^2.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mamura\\SimpleSignature\\PdfEditorServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.8"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
