@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Mamura\SimpleSignature\Http\Controllers\PdfEditorController;
+use Mamura\SimpleSignature\Http\Controllers\SimpleSignatureController;
 
 Route::prefix('simple-signature')->group(function () {
-    Route::get('/', [PdfEditorController::class, 'index']);
-    Route::post('/', [PdfEditorController::class, 'store']);
+    Route::get('/', [SimpleSignatureController::class, 'index']);
+    Route::post('/', [SimpleSignatureController::class, 'store']);
 });

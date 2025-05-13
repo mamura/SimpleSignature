@@ -3,15 +3,15 @@ namespace Mamura\SimpleSignature\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Mamura\PdfEditor\Services\PdfProcessor;
+use Mamura\SimpleSignature\Services\PdfProcessor;
 
-class PdfEditorController extends Controller
+class SimpleSignatureController extends Controller
 {
     public function index()
     {
         //dd(view()->getFinder()->getHints());
 
-        return view('pdf-editor::editor');
+        return view('simplse-signature::editor');
     }
 
     public function store(Request $request)
@@ -52,6 +52,6 @@ class PdfEditorController extends Controller
 
     public function show()
     {
-        return view('pdf-editor::show');
+        return view('simple-signature::show');
     }
 }

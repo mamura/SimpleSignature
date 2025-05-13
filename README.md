@@ -60,10 +60,10 @@ No seu `web.php`, adicione:
 
 ```php
 use Illuminate\Support\Facades\Route;
-use Mamura\SimpleSignature\Http\Controllers\PdfEditorController;
+use Mamura\SimpleSignature\Http\Controllers\SimpleSignatureController;
 
-Route::get('/pdf-editor', [PdfEditorController::class, 'index']);
-Route::post('/pdf-editor', [PdfEditorController::class, 'store']);
+Route::get('/simple-signature', [SimpleSignatureController::class, 'index']);
+Route::post('/simple-signature', [SimpleSignatureController::class, 'store']);
 ```
 
 ---
